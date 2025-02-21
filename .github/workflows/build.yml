@@ -5,6 +5,10 @@ on:
     branches: [ nextgen ]
   pull_request:
     branches: [ nextgen ]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Tag name of release"
 
 jobs:
   build:
